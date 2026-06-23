@@ -1,18 +1,19 @@
-const cartCount = document.querySelectorAll("#cartCount");
+const cartCountEls = document.querySelectorAll("#cartCount");
 const addButtons = document.querySelectorAll(".add-to-cart");
+const menuBtn = document.getElementById("menuBtn");
+const nav = document.querySelector(".nav");
+
 let count = 0;
 
 addButtons.forEach(btn => {
   btn.addEventListener("click", () => {
     count++;
-    cartCount.forEach(el => el.textContent = count);
-    alert("Added to cart");
+    cartCountEls.forEach(el => el.textContent = count);
   });
 });
 
-const menuBtn = document.getElementById("menuBtn");
-if (menuBtn) {
+if (menuBtn && nav) {
   menuBtn.addEventListener("click", () => {
-    alert("Mobile menu can be added next.");
+    nav.classList.toggle("show");
   });
 }
