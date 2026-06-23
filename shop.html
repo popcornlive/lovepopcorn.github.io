@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop | NovaCart</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html">NovaCart</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html" class="cart-link">Cart <span id="cartCount">0</span></a>
+      </nav>
+      <button class="menu-btn" id="menuBtn">Menu</button>
+    </div>
+  </header>
+
+  <main class="section container">
+    <h1>Shop portable products</h1>
+    <p class="lead">Browse curated affiliate products with a clean premium layout.</p>
+
+    <div class="filters">
+      <button class="filter-btn active">All</button>
+      <button class="filter-btn">Audio</button>
+      <button class="filter-btn">Power</button>
+      <button class="filter-btn">Travel</button>
+    </div>
+
+    <div class="product-grid">
+      <article class="product-card">
+        <div class="product-image"></div>
+        <h3>Portable Speaker X1</h3>
+        <p>Powerful sound in a compact body.</p>
+        <div class="product-footer">
+          <span class="price">€49.99</span>
+          <button class="btn btn-primary add-to-cart">Add to Cart</button>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-image"></div>
+        <h3>Fast Charge Power Bank</h3>
+        <p>Keep devices charged while traveling.</p>
+        <div class="product-footer">
+          <span class="price">€34.99</span>
+          <button class="btn btn-primary add-to-cart">Add to Cart</button>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-image"></div>
+        <h3>Noise Cancel Earbuds</h3>
+        <p>Clear audio for work and commute.</p>
+        <div class="product-footer">
+          <span class="price">€59.99</span>
+          <button class="btn btn-primary add-to-cart">Add to Cart</button>
+        </div>
+      </article>
+    </div>
+  </main>
+</body>
+</html>
